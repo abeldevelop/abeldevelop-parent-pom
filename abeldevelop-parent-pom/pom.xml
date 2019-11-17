@@ -2,10 +2,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.abeldevelop.architecture</groupId>
-    <artifactId>architecture-parent-pom</artifactId>
+    <artifactId>abeldevelop-parent-pom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>architecture-parent-pom</name>
+    <name>abeldevelop-parent-pom</name>
     <description>Parent POM for abeldevelop Architecture</description>
     <packaging>pom</packaging>
 

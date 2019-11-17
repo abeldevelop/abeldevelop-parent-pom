@@ -17,6 +17,16 @@
     </parent>
     
     <properties>
+        <!-- ABELDEVELOP PROPERTIES -->
+        <abeldevelop-parent-pom.version>0.0.1-SNAPSHOT</abeldevelop-parent-pom.version>
+        <api-starter.version>0.0.1-SNAPSHOT</api-starter.version>
+        <client-starter.version>0.0.1-SNAPSHOT</client-starter.version>
+        <dto-starter.version>0.0.1-SNAPSHOT</dto-starter.version>
+        <model-starter.version>0.0.1-SNAPSHOT</model-starter.version>
+        <repository-starter.version>0.0.1-SNAPSHOT</repository-starter.version>
+        <service-starter.version>0.0.1-SNAPSHOT</service-starter.version>
+        <test-starter.version>0.0.1-SNAPSHOT</test-starter.version>
+        
         <!-- SPRING BOOT PROPERTIES -->
         <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
         
@@ -35,9 +45,18 @@
         <cucumber.reporting.version>3.0.4</cucumber.reporting.version>
     </properties>
 
+    <dependencies>
+        <!-- UTILS DEPENDENCIES -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            
             <!-- SPRING CLOUD DEPENDENCIES -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -79,32 +98,29 @@
 	            <groupId>io.cucumber</groupId>
 	            <artifactId>cucumber-java</artifactId>
 	            <version>${cucumber.version}</version>
-	            <scope>test</scope>
 	        </dependency>
 	
 	        <dependency>
 	            <groupId>io.cucumber</groupId>
 	            <artifactId>cucumber-junit</artifactId>
 	            <version>${cucumber.version}</version>
-	            <scope>test</scope>
 	        </dependency>
 	
 	        <dependency>
 	            <groupId>io.cucumber</groupId>
 	            <artifactId>cucumber-spring</artifactId>
 	            <version>${cucumber.version}</version>
-	            <scope>test</scope>
 	        </dependency>
 	
 	        <dependency>
 	            <groupId>de.monochromata.cucumber</groupId>
 	            <artifactId>reporting-plugin</artifactId>
 	            <version>${cucumber.reporting.version}</version>
-	            <scope>test</scope>
 	        </dependency>
         </dependencies>
     </dependencyManagement>
 
+    <!-- 
     <build>
         <plugins>
             <plugin>
@@ -113,6 +129,7 @@
             </plugin>
         </plugins>
     </build>
+    -->
 
     <repositories>
         <repository>

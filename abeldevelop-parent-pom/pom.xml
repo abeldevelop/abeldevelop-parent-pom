@@ -17,8 +17,13 @@
     </parent>
     
     <properties>
-        <!-- ABELDEVELOP PROPERTIES -->
+        <!--//////////////////////////////-->
+        <!-- START ABELDEVELOP PROPERTIES -->
+        <!--//////////////////////////////-->
+        
         <abeldevelop-parent-pom.version>0.0.1-SNAPSHOT</abeldevelop-parent-pom.version>
+        
+        <!-- Starters -->
         <api-starter.version>0.0.1-SNAPSHOT</api-starter.version>
         <client-starter.version>0.0.1-SNAPSHOT</client-starter.version>
         <dto-starter.version>0.0.1-SNAPSHOT</dto-starter.version>
@@ -26,6 +31,11 @@
         <repository-starter.version>0.0.1-SNAPSHOT</repository-starter.version>
         <service-starter.version>0.0.1-SNAPSHOT</service-starter.version>
         <test-starter.version>0.0.1-SNAPSHOT</test-starter.version>
+        
+        
+        <!--////////////////////////////-->
+        <!-- END ABELDEVELOP PROPERTIES -->
+        <!--////////////////////////////-->
         
         <!-- SPRING BOOT PROPERTIES -->
         <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
@@ -50,12 +60,55 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
+            <!--////////////////////////////////-->
+            <!-- START ABELDEVELOP DEPENDENCIES -->
+            <!--////////////////////////////////-->
+
+            <!-- STARTERS DEPENDECIES -->            
+            <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>api-starter</artifactId>
+                <version>${api-starter.version}</version>
+            </dependency>
+	        <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>client-starter</artifactId>
+                <version>${client-starter.version}</version>
+            </dependency>
+	        <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>dto-starter</artifactId>
+                <version>${dto-starter.version}</version>
+            </dependency>
+	        <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>model-starter</artifactId>
+                <version>${model-starter.version}</version>
+            </dependency>
+	        <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>repository-starter</artifactId>
+                <version>${repository-starter.version}</version>
+            </dependency>
+	        <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>service-starter</artifactId>
+                <version>${service-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.starter</groupId>
+                <artifactId>test-starter</artifactId>
+                <version>${test-starter.version}</version>
+            </dependency>
+            
+            <!--//////////////////////////////-->
+            <!-- END ABELDEVELOP DEPENDENCIES -->
+            <!--//////////////////////////////-->            
             
             <!-- SPRING CLOUD DEPENDENCIES -->
             <dependency>

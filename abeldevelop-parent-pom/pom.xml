@@ -36,6 +36,10 @@
         <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
         <context-library.version>${abeldevelop-parent-pom.version}</context-library.version>
         <exception-library.version>${abeldevelop-parent-pom.version}</exception-library.version>
+        <logging-library.version>${abeldevelop-parent-pom.version}</logging-library.version>
+        <pagination-library.version>${abeldevelop-parent-pom.version}</pagination-library.version>
+        <propertie-library.version>${abeldevelop-parent-pom.version}</propertie-library.version>
+        <test-library.version>${abeldevelop-parent-pom.version}</test-library.version>
         
         <!--////////////////////////////-->
         <!-- END ABELDEVELOP PROPERTIES -->
@@ -125,6 +129,26 @@
                 <groupId>com.abeldevelop.architecture.library</groupId>
                 <artifactId>exception-library</artifactId>
                 <version>${exception-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>logging-library</artifactId>
+                <version>${logging-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>pagination-library</artifactId>
+                <version>${pagination-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>propertie-library</artifactId>
+                <version>${propertie-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>test-library</artifactId>
+                <version>${test-library.version}</version>
             </dependency>
             
             <!--//////////////////////////////-->

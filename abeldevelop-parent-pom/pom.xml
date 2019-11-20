@@ -32,6 +32,8 @@
         <service-starter.version>0.0.1-SNAPSHOT</service-starter.version>
         <test-starter.version>0.0.1-SNAPSHOT</test-starter.version>
         
+        <!-- Libraries -->
+        <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
         
         <!--////////////////////////////-->
         <!-- END ABELDEVELOP PROPERTIES -->
@@ -104,6 +106,13 @@
                 <groupId>com.abeldevelop.architecture.starter</groupId>
                 <artifactId>test-starter</artifactId>
                 <version>${test-starter.version}</version>
+            </dependency>
+            
+            <!-- LIBRARIES DEPENDENCIES -->
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>common-library</artifactId>
+                <version>${common-library.version}</version>
             </dependency>
             
             <!--//////////////////////////////-->

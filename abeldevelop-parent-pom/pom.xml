@@ -34,6 +34,7 @@
         
         <!-- Libraries -->
         <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
+        <context-library.version>${abeldevelop-parent-pom.version}</context-library.version>
         
         <!--////////////////////////////-->
         <!-- END ABELDEVELOP PROPERTIES -->
@@ -113,6 +114,11 @@
                 <groupId>com.abeldevelop.architecture.library</groupId>
                 <artifactId>common-library</artifactId>
                 <version>${common-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>context-library</artifactId>
+                <version>${context-library.version}</version>
             </dependency>
             
             <!--//////////////////////////////-->

@@ -35,6 +35,7 @@
         <!-- Libraries -->
         <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
         <context-library.version>${abeldevelop-parent-pom.version}</context-library.version>
+        <exception-library.version>${abeldevelop-parent-pom.version}</exception-library.version>
         
         <!--////////////////////////////-->
         <!-- END ABELDEVELOP PROPERTIES -->
@@ -119,6 +120,11 @@
                 <groupId>com.abeldevelop.architecture.library</groupId>
                 <artifactId>context-library</artifactId>
                 <version>${context-library.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>exception-library</artifactId>
+                <version>${exception-library.version}</version>
             </dependency>
             
             <!--//////////////////////////////-->

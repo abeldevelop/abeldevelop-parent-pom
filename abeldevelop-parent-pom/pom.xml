@@ -24,13 +24,13 @@
         <abeldevelop-parent-pom.version>0.0.1-SNAPSHOT</abeldevelop-parent-pom.version>
         
         <!-- Starters -->
-        <api-starter.version>0.0.1-SNAPSHOT</api-starter.version>
-        <client-starter.version>0.0.1-SNAPSHOT</client-starter.version>
-        <dto-starter.version>0.0.1-SNAPSHOT</dto-starter.version>
-        <model-starter.version>0.0.1-SNAPSHOT</model-starter.version>
-        <repository-starter.version>0.0.1-SNAPSHOT</repository-starter.version>
-        <service-starter.version>0.0.1-SNAPSHOT</service-starter.version>
-        <test-starter.version>0.0.1-SNAPSHOT</test-starter.version>
+        <api-starter.version>${abeldevelop-parent-pom.version}</api-starter.version>
+        <client-starter.version>${abeldevelop-parent-pom.version}</client-starter.version>
+        <dto-starter.version>${abeldevelop-parent-pom.version}</dto-starter.version>
+        <model-starter.version>${abeldevelop-parent-pom.version}</model-starter.version>
+        <repository-starter.version>${abeldevelop-parent-pom.version}</repository-starter.version>
+        <service-starter.version>${abeldevelop-parent-pom.version}</service-starter.version>
+        <test-starter.version>${abeldevelop-parent-pom.version}</test-starter.version>
         
         <!-- Libraries -->
         <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
@@ -38,7 +38,7 @@
         <exception-library.version>${abeldevelop-parent-pom.version}</exception-library.version>
         <logging-library.version>${abeldevelop-parent-pom.version}</logging-library.version>
         <pagination-library.version>${abeldevelop-parent-pom.version}</pagination-library.version>
-        <propertie-library.version>${abeldevelop-parent-pom.version}</propertie-library.version>
+        <property-library.version>${abeldevelop-parent-pom.version}</property-library.version>
         <test-library.version>${abeldevelop-parent-pom.version}</test-library.version>
         
         <!--////////////////////////////-->
@@ -142,8 +142,8 @@
             </dependency>
             <dependency>
                 <groupId>com.abeldevelop.architecture.library</groupId>
-                <artifactId>propertie-library</artifactId>
-                <version>${propertie-library.version}</version>
+                <artifactId>property-library</artifactId>
+                <version>${property-library.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.abeldevelop.architecture.library</groupId>

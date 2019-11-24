@@ -3,7 +3,7 @@
 
     <groupId>com.abeldevelop.architecture</groupId>
     <artifactId>abeldevelop-parent-pom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>abeldevelop-parent-pom</name>
     <description>Parent POM for abeldevelop Architecture</description>
@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.RELEASE</version>
+        <version>2.2.1.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     
@@ -44,12 +44,13 @@
         <!--////////////////////////////-->
         <!-- END ABELDEVELOP PROPERTIES -->
         <!--////////////////////////////-->
+        <java.version>1.8</java.version>
         
         <!-- SPRING BOOT PROPERTIES -->
-        <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
         
         <!-- SPRING CLOUD PROPERTIES -->
-        <spring-cloud.version>Hoxton.M3</spring-cloud.version>
+        <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
         <spring-boot-admin.version>2.1.5</spring-boot-admin.version>
 
         <!-- SWAGGER PROPERTIES -->

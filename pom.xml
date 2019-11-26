@@ -21,7 +21,7 @@
         <!-- START ABELDEVELOP PROPERTIES -->
         <!--//////////////////////////////-->
         
-        <abeldevelop-parent-pom.version>${project.version}</abeldevelop-parent-pom.version>
+        <abeldevelop-parent-pom.version>0.0.2-SNAPSHOT</abeldevelop-parent-pom.version>
         
         <!-- Starters -->
         <api-starter.version>${abeldevelop-parent-pom.version}</api-starter.version>

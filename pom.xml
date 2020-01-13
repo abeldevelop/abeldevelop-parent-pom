@@ -33,6 +33,7 @@
         <test-starter.version>${abeldevelop-parent-pom.version}</test-starter.version>
         
         <!-- Libraries -->
+        <model-library.version>${abeldevelop-parent-pom.version}</model-library.version>
         <common-library.version>${abeldevelop-parent-pom.version}</common-library.version>
         <context-library.version>${abeldevelop-parent-pom.version}</context-library.version>
         <exception-library.version>${abeldevelop-parent-pom.version}</exception-library.version>
@@ -62,6 +63,8 @@
         <!-- CUCUMBER PROPERTIES -->
         <cucumber.version>4.7.4</cucumber.version>
         <cucumber.reporting.version>3.0.4</cucumber.reporting.version>
+        
+        <javax-validation-api.version>2.0.1.Final</javax-validation-api.version>
     </properties>
 
     <dependencies>
@@ -116,6 +119,11 @@
             </dependency>
             
             <!-- LIBRARIES DEPENDENCIES -->
+            <dependency>
+                <groupId>com.abeldevelop.architecture.library</groupId>
+                <artifactId>model-library</artifactId>
+                <version>${model-library.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.abeldevelop.architecture.library</groupId>
                 <artifactId>common-library</artifactId>
@@ -216,6 +224,14 @@
 	            <artifactId>reporting-plugin</artifactId>
 	            <version>${cucumber.reporting.version}</version>
 	        </dependency>
+	        
+	        <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+			<dependency>
+			    <groupId>javax.validation</groupId>
+			    <artifactId>validation-api</artifactId>
+			    <version>${javax-validation-api.version}</version>
+			</dependency>
+	        
         </dependencies>
     </dependencyManagement>
 
